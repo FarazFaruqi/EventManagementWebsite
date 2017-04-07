@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Home</title>
+		<meta charset="utf-8">
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="icon" href="images/favicon.ico">
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" href="maincss/countdown.css">
+		<link rel="stylesheet" href="maincss/style_common.css" />
+		<link rel="stylesheet" href="maincss/style4.css" />
+		<link rel="stylesheet" href="maincss/camera.css">
+		<link rel="stylesheet" href="maincss/style.css">
+		<script src="mainjs/jquery.js"></script>
+		<script src="mainjs/jquery-migrate-1.2.1.js"></script>
+		<script src="mainjs/script.js"></script>
+		<script src="mainjs/superfish.js"></script>
+		<script src="mainjs/jquery.ui.totop.js"></script>
+		<script src="mainjs/jquery.equalheights.js"></script>
+		<script src="mainjs/jquery.mobilemenu.js"></script>
+		<script src="mainjs/camera.js"></script>
+		<!--[if (gt IE 9)|!(IE)]><!-->
+		<script src="js/jquery.mobile.customized.min.js"></script>
+		<!--<![endif]-->
+		<script>
+			$(document).ready(function(){
+				jQuery('#camera_wrap').camera({
+					loader: false,
+					pagination: false ,
+					minHeight: '444',
+					thumbnails: false,
+					height: '27.86458333333333%',
+					caption: true,
+					navigation: true,
+					fx: 'simpleFade'
+				});
+				$().UItoTop({ easingType: 'easeOutQuart' });
+			});
+		</script>
+	</head>
+	<body class="page1" id="top">
+		<div class="main">
+<!--==============================header=================================-->
+<center><h2 class="f_logo" style="font-size:100px;">REVELS</h2></center>
+<header>
+
+				<div class="container_12">
+
+					<div class="grid_12">
+
+						<div class="count_wrap">
+							<a href="participant.html">Join Us</a>
+						</div><br>
+						<div class="menu_block">
+							<nav class="horizontal-nav full-width horizontalNav-notprocessed">
+								<ul class="sf-menu">
+									<li class="current"><a href="index.html">Home</a></li>
+									<li><a href="printclub.php">Participating Clubs</a></li>
+									<li><a href="printevent.php">Events</a></li>
+									<li><a href="printparticipant.php">Participants</a></li>
+									<li><a href="index.html">Winners</a></li>
+								</ul>
+							</nav>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</header>
+			<div class="slider_wrapper">
+				<div id="camera_wrap" class="">
+					<div data-src="images/slide1.jpg">
+						<div class="caption fadeIn">
+							TRIATHLON
+						</div>
+					</div>
+					<div data-src="images/slide2.jpg">
+						<div class="caption fadeIn">
+							HACK IT OUT!
+						</div>
+					</div>
+					<div data-src="images/slide3.jpg">
+						<div class="caption fadeIn">
+							CODIFY
+						</div>
+					</div>
+					<div data-src="images/slide4.jpg">
+						<div class="caption fadeIn">
+							MICROTELL
+						</div>
+					</div>
+					<div data-src="images/slide5.jpg">
+						<div class="caption fadeIn">
+							MODEL UNITED NATIONS
+						</div>
+					</div>
+					<div data-src="images/slide6.jpg">
+						<div class="caption fadeIn">
+							THE JOKE MACHINE
+						</div>
+					</div>
+
+				</div>
+			</div>
+<!--==============================Content=================================-->
+				<div class="container_12">
+				<div class="count_wrap">
+							<a href="deleteparticipant.html">Leave Us</a>
+						</div>
+					<div class="clear"></div>
+					<div class="grid_4">
+						<div class="box">
+							<div class="box_title">Calendar</div>
+							<div class="box_bot">
+								<div class="maxheight">
+									<img src="images/page1_img1.jpg" alt=""><a href="#">More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid_4">
+						<div class="box">
+							<div class="box_title">Members</div>
+							<div class="box_bot">
+								<div class="maxheight">
+									<img src="images/page1_img2.jpg" alt=""><a href="#">More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid_4">
+						<div class="box">
+							<div class="box_title">Results</div>
+							<div class="box_bot">
+								<div class="maxheight">
+									<img src="images/page1_img3.jpg" alt=""><a href="#">More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+<!--==============================footer=================================-->
+		<footer>
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="f_logo">
+						<a href="index.html">REVELS</a>
+						<br><br>
+						<p> We hope to find you there!</p>
+					</div>
+					<div class="copy">
+						<span>Revels 2017</span>
+						Website designed by Faraz Faruqi and Deep Kothari
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</footer>
+		</footer>
+		<script src="js/jquery.countdown.js"></script>
+		<script src="js/cd_config.js"></script>
+		<script src="js/modernizr.custom.69142.js"></script>
+		<script type="text/javascript">
+			Modernizr.load({
+				test: Modernizr.csstransforms3d && Modernizr.csstransitions,
+				yep : ['http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js','js/jquery.hoverfold.js'],
+				nope: 'css/fallback.css',
+				callback : function( url, result, key ) {
+					if( url === 'js/jquery.hoverfold.js' ) {
+						$( '#grid' ).hoverfold();
+					}
+				}
+			});
+		</script>
+	</body>
+</html>
